@@ -22,6 +22,10 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    color: inherit;
+}
+* {
+    box-sizing: border-box;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -125,6 +129,9 @@ html {
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
+a {
+    text-decoration: none;
+}
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */

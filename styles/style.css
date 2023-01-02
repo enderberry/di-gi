@@ -2,10 +2,112 @@
 
 html {
     font-size: 6.25%;
+    --cprimary: #2b4074;
+    --container-wid1: 1170px;
+    --container-wid2: 1138px;
+    --container-wid3: 886px;
+    --container-dlt1: 85px;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16rem;
+}
+
+.root {}
+.root__container {
+    margin: 0 auto;
+    max-width: var(--container-wid1);
+}
+.root__container--hhead {
+    max-width: calc(var(--container-wid1) + var(--container-dlt1));
+    position: relative;
+    left: calc(var(--container-dlt1) / -2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.root__container--hmain {
+    max-width: var(--container-wid3);
+}
+
+.header {
+    background: var(--cprimary);
+}
+.header__head {}
+.header__main {
+    font-family: 'Roboto Condensed';
+    background: url('../img/bg.jpg');
+    color: #fff;
+}
+
+.hhead {}
+.hhead__logo {}
+.hhead__menu-btn {}
+.hhead__menu-btn button {
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 40rem;
+    height: 40rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.hhead__menu-btn img {
+}
+
+.hmain {
+    text-align: center;
+}
+.hmain__fg {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 107rem 0 78rem;
+}
+.hmain__text-1 {
+    font-size: 96rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.hmain__text-2 {
+    font-size: 24rem;
+    margin-top: 18rem;
+}
+.hmain__more-btn {
+    margin-top: 28rem;
+}
+.hmain__more-btn a {
+    font-family: 'Roboto';
+    font-size: 18rem;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding: 18rem 46rem;
+    background: var(--cprimary);
+    display: inline-block;
+    border-radius: 3px;
+}
+.hmain__slider-dots {
+    margin-top: 123rem;
+    display: flex;
+    justify-content: center;
+}
+.hmain__slider-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.hmain__slider-dot + .hmain__slider-dot {
+    margin-left: 10px;
+}
+.hmain__slider-dot--current {
+    background: transparent;
+}
+.hmain__slider-btns {
+    display: none;
 }
