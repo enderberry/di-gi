@@ -1,0 +1,11 @@
+@import "reset.css";
+
+html {
+    font-size: 6.25%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16rem;
+}
