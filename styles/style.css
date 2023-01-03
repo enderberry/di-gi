@@ -4,16 +4,25 @@ html {
     font-size: 6.25%;
     --cprimary: #2b4074;
     --cyw: #f9f6e5;
+    /*--container-wid0: 1440px;
     --container-wid1: 1170px;
     --container-wid2: 1140px;
-    --container-wid3: 886px;
-    --container-dlt1: 85px;
+    --container-wid3: 886px;*/
+
+    --wid0: 1440px;
+    --wid1: 1316px;
+    --wid2: 1140px;
+    --wid3: 886px;
+    --delta1: calc((var(--wid0) - var(--wid1)) / 2);
+    --delta2: calc((var(--wid0) - var(--wid2)) / 2);
+    --delta3: calc((var(--wid1) - var(--wid2)) / 2);
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16rem;
+    font-weight: 300;
 }
 
 .btn {}
@@ -24,30 +33,40 @@ body {
     line-height: 1em;
     border-radius: 3px;
 }
+.hr {
+    width: 100rem;
+    height: 8rem;
+    background: var(--cprimary);
+}
 
 .root {}
 .root__container {
     margin: 0 auto;
-    max-width: var(--container-wid1);
+    max-width: var(--wid0);
 }
 .root__container--hhead {
-    max-width: calc(var(--container-wid2) + var(--container-dlt1));
-    position: relative;
-    left: calc(var(--container-dlt1) / -2);
+    max-width: var(--wid1);
+    padding-right: var(--delta3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
 }
 .root__container--hmain {
-    max-width: var(--container-wid3);
+    max-width: var(--wid3);
 }
 .root__container--recall {
-    max-width: var(--container-wid2);
+    max-width: var(--wid2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 192rem
+}
+.root__container--service {
+    max-width: var(--wid0);
+    padding-left: var(--delta1);
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
@@ -63,7 +82,10 @@ body {
 .header__recall {}
 
 .hhead {}
-.hhead__logo {}
+.hhead__logo {
+    position: relative;
+    -left: calc(-1 * var(--delta3));
+}
 .hhead__menu-btn {}
 .hhead__menu-btn button {
     border: none;
@@ -156,6 +178,7 @@ body {
 .recall__block {}
 .recall__text-1 {
     font-size: 24rem;
+    font-weight: 400;
 }
 .recall__text-2 {
     font-size: 18rem;
@@ -163,10 +186,115 @@ body {
     width: 70%;
 }
 .recall__btn {
-    font-size: 18px;
+    font-size: 18rem;
     color: var(--cprimary);
+    font-weight: 400;
 }
 .recall__btn a {
     background: var(--cyw);
     padding: 14rem 16rem;
 }
+
+.section {}
+.section__title {
+    font-family: 'Roboto Condensed';
+    font-size: 48rem;
+}
+
+.service {}
+.service__block {
+    flex: 1;
+}
+.service__block:first-child {
+    -width: 77%;
+    padding-right: 20px;
+}
+.service__block:last-child {
+    -width: 60%;
+    flex: 2;
+}
+.service__title {
+    color: var(--cprimary);
+    margin-top: 90rem;
+}
+.service__text-1 {
+    font-size: 26rem;
+    color: #4a4a4a;
+    margin-top: 64rem;
+}
+.service__text-2 {
+    font-size: 24rem;
+    color: #797979;
+    margin-top: 34rem;
+    margin-bottom: 32rem;
+}
+.service__hr {
+    margin-top: 30rem;
+}
+.service__table {
+    --bdr: 1px solid var(--cyw);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 270rem;
+    border-left: var(--bdr);
+}
+.service__card {
+    border-bottom: var(--bdr);
+    border-right: var(--bdr);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sv-card {
+    font-family: 'Roboto Condensed';
+    cursor: pointer;
+    font-size: 16rem;
+}
+.sv-card,
+.sv-card * {
+    transition-duration: 0.3s;
+}
+.sv-card__img {}
+.sv-card__img img {}
+.sv-card__title {
+    color: #4a4a4a;
+    margin-top: 27rem;
+}
+.sv-card__onhover {
+    height: 0;
+    opacity: 0;
+}
+.sv-card__description {
+    padding: 0 10px;
+    font-family: 'Roboto';
+    color: #9b9b9b;
+    margin-top: 33rem;
+}
+.sv-card__title,
+.sv-card__more-caption {
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.sv-card__more-caption {
+    color: var(--cprimary);
+    margin-top: 24rem;
+}
+
+.sv-card:hover {
+    border: 4px solid var(--cprimary);
+}
+.sv-card:hover .sv-card__img {}
+.sv-card:hover .sv-card__img img {}
+.sv-card:hover .sv-card__title {
+    margin-top: 14rem;
+}
+.sv-card:hover .sv-card__onhover {
+    height: 37%;
+    opacity: 1;
+}
+.sv-card:hover .sv-card__description {}
+.sv-card:hover .sv-card__more-caption {}
