@@ -68,6 +68,12 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.root__container--projects {
+    max-width: var(--wid2);
+}
+.root__projects {
+    padding: 80rem 0;
+}
 
 .header {
     background: var(--cprimary);
@@ -250,8 +256,9 @@ body {
 
 .sv-card {
     font-family: 'Roboto Condensed';
-    cursor: pointer;
+    -cursor: pointer;
     font-size: 16rem;
+    overflow: hidden;
 }
 .sv-card,
 .sv-card * {
@@ -298,3 +305,73 @@ body {
 }
 .sv-card:hover .sv-card__description {}
 .sv-card:hover .sv-card__more-caption {}
+
+.projects {
+    background: linear-gradient(var(--cprimary), #fff);
+}
+.projects__title {
+    color: #fff;
+    text-align: center;
+}
+.projects__hr {
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 24rem;
+}
+.projects__gallery {
+    margin-top: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+.projects__card {
+    display: inline-block;
+}
+
+.pj-card {}
+.pj-card,
+.pj-card * {
+    transition-duration: 0.1s;
+}
+.pj-card__img {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.pj-card__img img {}
+.pj-card__title {
+    margin-top: 38rem;
+    font-size: 16px;
+    font-family: 'Roboto Condensed';
+    color: var(--cprimary);
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pj-card__onhover-wrapper {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 11rem 13rem;
+    width: 100%;
+    height: 100%;
+}
+.pj-card__onhover {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pj-card__btn {}
+.pj-card__btn + .pj-card__btn {
+    margin-left: 10rem;
+}
+.pj-card:hover {
+}
+.pj-card:hover .pj-card__onhover-wrapper {
+    opacity: 1;
+}
