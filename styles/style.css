@@ -71,8 +71,15 @@ body {
 .root__container--projects {
     max-width: var(--wid2);
 }
+.root__container--team {
+    max-width: var(--wid2);
+    display: flex;
+}
 .root__projects {
     padding: 80rem 0;
+}
+.root__team {
+    padding: 50rem 0 100rem;
 }
 
 .header {
@@ -205,15 +212,15 @@ body {
 .section__title {
     font-family: 'Roboto Condensed';
     font-size: 48rem;
+    text-transform: capitalize;
 }
 
 .service {}
-.service__block {
-    flex: 1;
-}
+.service__block {}
 .service__block:first-child {
     -width: 77%;
-    padding-right: 20px;
+    padding-right: 60rem;
+    width: 453rem;
 }
 .service__block:last-child {
     -width: 60%;
@@ -233,6 +240,7 @@ body {
     color: #797979;
     margin-top: 34rem;
     margin-bottom: 32rem;
+    line-height: 24rem;
 }
 .service__hr {
     margin-top: 30rem;
@@ -275,10 +283,10 @@ body {
     opacity: 0;
 }
 .sv-card__description {
-    padding: 0 10px;
     font-family: 'Roboto';
     color: #9b9b9b;
-    margin-top: 33rem;
+    width: 95%;
+    margin: 33rem auto 0;
 }
 .sv-card__title,
 .sv-card__more-caption {
@@ -374,4 +382,35 @@ body {
 }
 .pj-card:hover .pj-card__onhover-wrapper {
     opacity: 1;
+}
+
+.team {}
+.team__block:last-child {
+    padding-left: 100rem;
+    position: relative;
+    width: 584rem;
+}
+.team__title {
+    color: #4a4a4a;
+}
+.team__hr {
+    margin-top: 32rem;
+    width: 113rem;
+}
+.team__description {
+    margin-top: 39rem;
+    color: #9b9b9b;
+    line-height: 24rem;
+}
+.team__btn {
+    --padd-v: 21rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(calc(var(--padd-v) * -1));
+}
+.team__btn a {
+    padding: var(--padd-v) 35rem;
+    background: var(--cprimary);
+    color: #fff;
+    font-weight: 400;
 }
