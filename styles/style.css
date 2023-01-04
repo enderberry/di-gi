@@ -414,3 +414,27 @@ body {
     color: #fff;
     font-weight: 400;
 }
+
+.last-news {}
+.last-news__title {}
+.last-news__hr {}
+.last-news__masonry {
+    display: flex;
+    -grid-template-columns: repeat(4, 1fr);
+    -grid-auto-rows: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 770rem;
+}
+
+.masonry {}
+.masonry__brick {}
+.masonry__brick:nth-of-type(2n) {
+    flex-grow: 1;
+}
+.masonry__img {}
+.masonry__img img {}
+.masonry__title {}
+.masonry__onhover {
+    display: none;
+}
