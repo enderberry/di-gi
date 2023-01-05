@@ -75,11 +75,17 @@ body {
     max-width: var(--wid2);
     display: flex;
 }
+.root__container--last-news {
+    max-width: var(--wid1);
+}
 .root__projects {
     padding: 80rem 0;
 }
 .root__team {
     padding: 50rem 0 100rem;
+}
+.root__last-news {
+    padding: 55rem 0 80rem;
 }
 
 .header {
@@ -390,6 +396,10 @@ body {
     position: relative;
     width: 584rem;
 }
+.team__img {
+    border-radius: 4px;
+    overflow: hidden;
+}
 .team__title {
     color: #4a4a4a;
 }
@@ -415,26 +425,90 @@ body {
     font-weight: 400;
 }
 
-.last-news {}
-.last-news__title {}
-.last-news__hr {}
+.last-news {
+    background: var(--cyw);
+}
+.last-news__title {
+    text-align: center;
+    color: #4a4a4a;
+}
+.last-news__hr {
+    margin: 19rem auto 115rem;
+}
+.last-news__masonry-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .last-news__masonry {
+    --gap: 30rem;
     display: flex;
     -grid-template-columns: repeat(4, 1fr);
     -grid-auto-rows: auto;
-    flex-direction: column;
+    -flex-direction: column;
+    writing-mode: vertical-lr;
     flex-wrap: wrap;
-    height: 770rem;
+    height: 720rem;
+    -column-count: 4;
+    align-items: flex-start;
+    gap: calc(var(--gap) / 2) var(--gap);
+    margin: 0 auto;
 }
 
 .masonry {}
-.masonry__brick {}
+.masonry__brick {
+    border-radius: 4px;
+    overflow: hidden;
+    writing-mode: initial;
+    position: relative;
+}
+.masonry__brick,
+.masonry__brick * {
+    transition-duration: 0.2s;
+}
 .masonry__brick:nth-of-type(2n) {
-    flex-grow: 1;
+    -flex-grow: 1;
 }
 .masonry__img {}
 .masonry__img img {}
-.masonry__title {}
-.masonry__onhover {
-    display: none;
+.masonry__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 9rem 19rem;
+    color: #4a4a4a;
+    font-size: 16rem;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
+.masonry__onhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.masonry__brick:hover {}
+.masonry__brick:hover .masonry__img {
+    filter: brightness(0.85);
+}
+.masonry__brick:hover .masonry__title {
+    background: var(--cprimary);
+    color: #fff;
+    transform: translateY(-30rem);
+}
+.masonry__brick:hover .masonry__onhover {
+    opacity: 1;
+    border: 10px solid var(--cprimary);
+}
+.masonry__break {
+    flex-basis: 100%;
+    -flex-grow: 1;
+}
+.masonry__break--a {}
