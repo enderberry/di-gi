@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Di-Gi</title>
@@ -10,70 +10,75 @@
 </head>
 <body>
 
+<!--
+    About IMG Width&Height:
+    https://stackoverflow.com/questions/1247685/should-i-specify-height-and-width-attributes-for-my-imgs-in-html
+-->
+<div id="top"></div>
 <div class="root">
     <header class="header">
         <div class="header__head hhead">
-            <div class="root__container root__container--hhead">
+            <div class="container container--hhead">
                 <div class="logo hhead__logo">
-                    <img src="img/logo.png" alt="Di Gi" style="width:100px; height:66px;">
+                    <img src="img/logo.png" alt="Di Gi" width="100" height="66">
                 </div>
-                <div class="hhead__menu-btn">
+                <div class="hhead__menu-btn btn">
                     <button>
-                        <img src="img/menu.png" alt="|||" style="width:12px; height:10px;">
+                        <img src="img/menu.png" alt="Menu" width="12" height="10">
                     </button>
                 </div>
             </div>
-            <div class="header__main hmain">
-                <div class="hmain__fg">
-                    <div class="root__container root__container--hmain">
-                        <h1 class="hmain__text-1">Мысли<br>глобально</h1>
-                        <p class="hmain__text-2">
-                            Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших
-                            клиентов в маркетинге, продажах и управлении
-                        </p>
-                        <div class="hmain__more-btn btn">
-                            <a href="#">Подробнее</a>
-                        </div>
-                        <ul class="hmain__slider-discs slider-discs">
-                            <li class="slider-discs__item"></li>
-                            <li class="slider-discs__item slider-discs__item--current"></li>
-                            <li class="slider-discs__item"></li>
-                        </ul>
+        </div>
+        <div class="header__main hmain">
+            <div class="hmain__fg">
+                <div class="container container--hmain">
+                    <h1 class="hmain__text-1">Мысли<br>глобально</h1>
+                    <p class="hmain__text-2">
+                        Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших
+                        клиентов в маркетинге, продажах и управлении
+                    </p>
+                    <div class="hmain__more-btn btn">
+                        <a href="#">Подробнее</a>
                     </div>
-                </div>
-                <div class="hmain__slider-btns">
-                    <div class="hmain__slider-btn">
-                        <button>
-                            <img src="img/arrow_left.png" alt="<" style="width:16px; height:26px; filter:invert(1); transform:translateX(-6%);">
-                        </button>
-                    </div>
-                    <div class="hmain__slider-btn">
-                        <button>
-                            <img src="img/arrow_right.png" alt=">" style="width:16px; height:26px;filter:invert(1)brightness(0.57); transform:translateX(12%);">
-                        </button>
-                    </div>
+                    <ul class="hmain__slider-discs slider-discs">
+                        <li class="slider-discs__item"></li>
+                        <li class="slider-discs__item slider-discs__item--current"></li>
+                        <li class="slider-discs__item"></li>
+                    </ul>
                 </div>
             </div>
-            <div class="header__recall recall">
-                <div class="root__container root__container--recall">
-                    <div class="recall__block">
-                        <p class="recall__text-1">Вы полюбите нас с первой встречи!</p>
-                        <p class="recall__text-2">
-                            Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой
-                            сфере.
-                        </p>
-                    </div>
-                    <div class="recall__block">
-                        <div class="recall__btn btn">
-                            <a href="#">Перезвоните мне</a>
-                        </div>
+            <div class="hmain__slider-btns">
+                <div class="hmain__slider-btn btn">
+                    <button>
+                        <img src="img/arrow_left.png" alt="<" width="16" height="26" style="transform:translateX(-6%);">
+                    </button>
+                </div>
+                <div class="hmain__slider-btn btn">
+                    <button>
+                        <img src="img/arrow_right.png" alt=">" width="16" height="26" style="filter:brightness(0.57); transform:translateX(12%);">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__recall recall">
+            <div class="container container--recall">
+                <div class="recall__block">
+                    <p class="recall__text-1">Вы полюбите нас с первой встречи!</p>
+                    <p class="recall__text-2">
+                        Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой
+                        сфере.
+                    </p>
+                </div>
+                <div class="recall__block">
+                    <div class="recall__btn btn">
+                        <a href="#">Перезвоните мне</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <section class="section service">
-        <div class="root__container root__container--service">
+        <div class="container container--service">
             <div class="service__block">
                 <h2 class="section__title service__title">Сервис</h2>
                 <p class="service__text-1">От идеи до незабываемого и измеримого результата.</p>
@@ -87,82 +92,82 @@
                 <div class="service__table"> <!-- Descriptions here are just a joke -->
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img1.png" alt="Img 1" style="width:65px; height:65px;">
+                            <img src="img/service/strategy.png" alt="Icon" width="65" height="64">
                         </div>
-                        <div class="sv-card__title">Стратегия</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Стратегия</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Разработаем уникальную и удобную стратегию.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img2.png" alt="Img 2" style="width:65px; height:65px;">
+                            <img src="img/service/analysis.png" alt="Icon" width="65" height="64">
                         </div>
-                        <div class="sv-card__title">Анализ</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Анализ</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Проведем уникальный и удобный анализ.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img3.png" alt="Img 3" style="width:65px; height:65px;">
+                            <img src="img/service/socmed.png" alt="Icon" width="65" height="65">
                         </div>
-                        <div class="sv-card__title">Соц сети</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Соц сети</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Создадим уникальную и удобную соц-сеть.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img4.png" alt="Img 4" style="width:65px; height:65px;">
+                            <img src="img/service/growth.png" alt="Icon" width="65" height="65">
                         </div>
-                        <div class="sv-card__title">Развитие</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Развитие</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Обеспечим уникальное и удобное развитие.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img5.png" alt="Img 5" style="width:65px; height:65px;">
+                            <img src="img/service/content.png" alt="Icon" width="65" height="65">
                         </div>
-                        <div class="sv-card__title">Контент</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Контент</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Создадим уникальный и удобный контент.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img6.png" alt="Img 6" style="width:65px; height:65px;">
+                            <img src="img/service/design.png" alt="Icon" width="59" height="65">
                         </div>
-                        <div class="sv-card__title">Дизайн UX</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Дизайн UX</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Создадим уникальный и удобный дизайн.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img7.png" alt="Img 7" style="width:65px; height:65px;">
+                            <img src="img/service/ads.png" alt="Icon" width="65" height="65">
                         </div>
-                        <div class="sv-card__title">Таргетинговая<br>реклама</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Таргетинговая<br>реклама</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Создадим уникальную и удобную рекламу.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                     <div class="service__card sv-card">
                         <div class="sv-card__img">
-                            <img src="img/service/img8.png" alt="Img 8" style="width:65px; height:65px;">
+                            <img src="img/service/product.png" alt="Icon" width="65" height="65">
                         </div>
-                        <div class="sv-card__title">Продукт</div>
-                        <div class="sv-card__onhover">
+                        <div class="sv-card__title text text--wide">Продукт</div>
+                        <div class="sv-card__hv-block">
                             <p class="sv-card__description">Создадим уникальный и удобный продукт.</p>
-                            <div class="sv-card__more-caption"><a href="#">Подробнее &rarr;</a></div>
+                            <div class="sv-card__more-link text text--wide"><a href="#">Подробнее &rarr;</a></div>
                         </div>
                     </div>
                 </div>
@@ -170,98 +175,98 @@
         </div>
     </section>
     <section class="section projects root__projects">
-        <div class="root__container root__container--projects">
+        <div class="container container--projects">
             <h2 class="section__title projects__title">Наши проекты</h2>
             <div class="projects__hr hr"></div>
             <div class="projects__gallery">
                 <div class="projects__card pj-card">
                     <div class="pj-card__img">
-                        <img src="img/projects/img1.png" alt="Img 1" style="width:268px; height:239px;">
-                        <div class="pj-card__onhover-wrapper">
-                            <div class="pj-card__onhover">
+                        <img src="img/projects/lalique.png" alt="Photo" width="268" height="239">
+                        <div class="pj-card__hv-block-wrapper">
+                            <div class="pj-card__hv-block">
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/info_btn_primary.png" alt="(i)" style="width:25px; height:25px;">
+                                        <img src="img/info_btn_primary.png" alt="(i)" width="28" height="28">
                                     </a>
                                 </div>
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/search_btn.png" alt="(?)" style="width:29px; height:28px; transform: translateY(1px);">
+                                        <img src="img/search_btn.png" alt="(?)" width="29" height="28" style="transform: translateY(1px);">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="pj-card__title">Lalique бутик</p>
+                    <p class="pj-card__title text text--wide">Lalique бутик</p>
                 </div>
                 <div class="projects__card pj-card">
                     <div class="pj-card__img">
-                        <img src="img/projects/img2.png" alt="Img 2" style="width:268px; height:239px;">
-                        <div class="pj-card__onhover-wrapper">
-                            <div class="pj-card__onhover">
+                        <img src="img/projects/housebuild.png" alt="Photo" width="268" height="239">
+                        <div class="pj-card__hv-block-wrapper">
+                            <div class="pj-card__hv-block">
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/info_btn_primary.png" alt="(i)" style="width:25px; height:25px;">
+                                        <img src="img/info_btn_primary.png" alt="(i)" width="28" height="28">
                                     </a>
                                 </div>
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/search_btn.png" alt="(?)" style="width:29px; height:28px; transform: translateY(1px);">
+                                        <img src="img/search_btn.png" alt="(?)" width="29" height="28" style="transform: translateY(1px);">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="pj-card__title">Строительство домов</p>
+                    <p class="pj-card__title text text--wide">Строительство домов</p>
                 </div>
                 <div class="projects__card pj-card">
                     <div class="pj-card__img">
-                        <img src="img/projects/img3.png" alt="Img 3" style="width:268px; height:239px;">
-                        <div class="pj-card__onhover-wrapper">
-                            <div class="pj-card__onhover">
+                        <img src="img/projects/coffeeshop.png" alt="Photo" width="268" height="239">
+                        <div class="pj-card__hv-block-wrapper">
+                            <div class="pj-card__hv-block">
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/info_btn_primary.png" alt="(i)" style="width:25px; height:25px;">
+                                        <img src="img/info_btn_primary.png" alt="(i)" width="28" height="28">
                                     </a>
                                 </div>
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/search_btn.png" alt="(?)" style="width:29px; height:28px; transform: translateY(1px);">
+                                        <img src="img/search_btn.png" alt="(?)" width="29" height="28" style="transform: translateY(1px);">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="pj-card__title">Кофейня</p>
+                    <p class="pj-card__title text text--wide">Кофейня</p>
                 </div>
                 <div class="projects__card pj-card">
                     <div class="pj-card__img">
-                        <img src="img/projects/img4.png" alt="Img 4" style="width:268px; height:239px;">
-                        <div class="pj-card__onhover-wrapper">
-                            <div class="pj-card__onhover">
+                        <img src="img/projects/uniquetours.png" alt="Photo" width="268" height="239">
+                        <div class="pj-card__hv-block-wrapper">
+                            <div class="pj-card__hv-block">
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/info_btn_primary.png" alt="(i)" style="width:25px; height:25px;">
+                                        <img src="img/info_btn_primary.png" alt="(i)" width="28" height="28">
                                     </a>
                                 </div>
                                 <div class="pj-card__btn">
                                     <a href="#">
-                                        <img src="img/search_btn.png" alt="(?)" style="width:29px; height:28px; transform: translateY(1px);">
+                                        <img src="img/search_btn.png" alt="(?)" width="29" height="28" style="transform: translateY(1px);">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="pj-card__title">Уникальные туры</p>
+                    <p class="pj-card__title text text--wide">Уникальные туры</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="section team root__team">
-        <div class="root__container root__container--team">
+        <div class="container container--team">
             <div class="team__block">
                 <div class="team__img">
-                    <img src="img/team.png" alt="Photo">
+                    <img src="img/team.png" alt="Photo" width="460" height="420">
                 </div>
             </div>
             <div class="team__block">
@@ -280,84 +285,116 @@
         </div>
     </section>
     <section class="section last-news root__last-news">
-        <div class="root__container root__container--last-news">
+        <div class="container container--last-news">
             <h2 class="last-news__title section__title">Последние новости</h2>
             <div class="last-news__hr hr"></div>
             <div class="last-news__masonry-wrapper">
                 <div class="last-news__masonry masonry">
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_a.png" alt="Img A" style="width:270px; height:443px;">
+                            <img src="img/last/img_a.png" alt="Photo" width="270" height="443">
                         </div>
-                        <p class="masonry__title">3D в брендинге</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
-                        </div>
-                    </div>
-                    <div class="masonry__brick">
-                        <div class="masonry__img">
-                            <img src="img/last/img_e.png" alt="Img E" style="width:270px; height:167px;">
-                        </div>
-                        <p class="masonry__title">Уникальный дизайн</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
-                        </div>
-                    </div>
-                    <div class="masonry__break masonry__break--a"></div>
-                    <div class="masonry__brick">
-                        <div class="masonry__img">
-                            <img src="img/last/img_b.png" alt="Img B" style="width:270px; height: 342px;">
-                        </div>
-                        <p class="masonry__title">Контекстная реклама</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">3D в брендинге</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_f.png" alt="Img F" style="width:270px; height:342px;">
+                            <img src="img/last/img_e.png" alt="Photo" width="270" height="167">
                         </div>
-                        <p class="masonry__title">Взгляд со стороны</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">Уникальный дизайн</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="masonry__break masonry__break--a"></div>
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_c.png" alt="Img C" style="width:270px; height:384px;">
+                            <img src="img/last/img_b.png" alt="Photo" width="270" height="342">
                         </div>
-                        <p class="masonry__title">Графика</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">Контекстная реклама</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_g.png" alt="Img G" style="width:270px; height:198px;">
+                            <img src="img/last/img_f.png" alt="Photo" width="270" height="342">
                         </div>
-                        <p class="masonry__title">Соц сети и их польза</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">Взгляд со стороны</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="masonry__break masonry__break--a"></div>
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_d.png" alt="Img D" style="width:270px; height:211px;">
+                            <img src="img/last/img_c.png" alt="Photo" width="270" height="384">
                         </div>
-                        <p class="masonry__title">Корпоративная культура</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">Графика</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="masonry__brick">
                         <div class="masonry__img">
-                            <img src="img/last/img_h.png" alt="Img H" style="width:270px; height:437px;">
+                            <img src="img/last/img_g.png" alt="Photo"  width="270" height="198">
                         </div>
-                        <p class="masonry__title">Эксклюзивность</p>
-                        <div class="masonry__onhover">
-                            <div class="masonry__btn"><a href="#"><img src="img/info_btn_white.png" alt="(i)"></a></div>
+                        <p class="masonry__title text text--wide">Соц сети и их польза</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry__break masonry__break--a"></div>
+                    <div class="masonry__brick">
+                        <div class="masonry__img">
+                            <img src="img/last/img_d.png" alt="Photo" width="270" height="211">
+                        </div>
+                        <p class="masonry__title text text--wide">Корпоративная культура</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry__brick">
+                        <div class="masonry__img">
+                            <img src="img/last/img_h.png" alt="Photo" width="270" height="437">
+                        </div>
+                        <p class="masonry__title text text--wide">Эксклюзивность</p>
+                        <div class="masonry__hv-block">
+                            <div class="masonry__btn">
+                                <a href="#">
+                                    <img src="img/info_btn_white.png" alt="(i)" width="28" height="28">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -365,14 +402,14 @@
         </div>
     </section>
     <section class="section quote root__quote">
-        <div class="root__container root__container--quote">
-            <div class="quote__q-icon">
-                <img src="img/quotes.png" alt="Quote" style="width:32px; height:27px;">
-            </div>
+        <div class="container container--quote">
+            <h2 class="quote__q-icon">
+                <img src="img/quotes.png" alt="Quote" width="32" height="27">
+            </h2>
             <p class="quote__text">
                 Если нужно создавать либо повышать имидж компании, то <span class="text--accent">диджитал-маркетинг</span> является наиболее подходящим
             </p>
-            <p class="quote__author">- Маргарита Акулич</p>
+            <p class="quote__author text text--wide">- Маргарита Акулич</p>
             <ul class="quote__slider-discs slider-discs slider-discs--color--primary">
                 <li class="slider-discs__item"></li>
                 <li class="slider-discs__item slider-discs__item--current"></li>
@@ -384,50 +421,50 @@
         <div class="footer__top-caption-wrapper">
             <div class="footer__top-caption">
                 <div class="logo">
-                    <img src="img/logo.png" alt="Di Gi" style="width:100px; height:66px;">
+                    <img src="img/logo.png" alt="Di Gi" width="100" height="66">
                 </div>
             </div>
         </div>
-        <div class="root__container root__container--footer">
+        <div class="container container--footer">
             <p class="footer__text">Мы хотели бы услышать все о вашем проекте.<br>Свяжись с нами.</p>
             <ul class="footer__media">
                 <li class="footer__med-item">
                     <a href="#">
-                        <img src="img/media/facebook.png" alt="F">
+                        <img src="img/media/facebook.png" alt="F" width="10" height="20">
                     </a>
                 </li>
                 <li class="footer__med-item">
                     <a href="#">
-                        <img src="img/media/gplus.png" alt="G+">
+                        <img src="img/media/gplus.png" alt="G+" width="26" height="18">
                     </a>
                 </li>
                 <li class="footer__med-item">
                     <a href="#">
-                        <img src="img/media/twitter.png" alt="T">
+                        <img src="img/media/twitter.png" alt="T" width="19" height="15">
                     </a>
                 </li>
                 <li class="footer__med-item">
                     <a href="#">
-                        <img src="img/media/pinterest.png" alt="P">
+                        <img src="img/media/pinterest.png" alt="P" width="18" height="18">
                     </a>
                 </li>
             </ul>
             <div class="footer__colrow">
                 <div class="footer__col ft-col">
-                    <h3 class="ft-col__title">Контакты</h3>
+                    <h3 class="ft-col__title text text--wide">Контакты</h3>
                     <ul class="ft-col__list">
-                        <li class="ft-col__litem"><a href="+3801234567890">+380 123 456 7890</a></li>
+                        <li class="ft-col__litem"><a href="tel:+3801234567890">+380 123 456 7890</a></li>
                         <li class="ft-col__litem"><a href="mailto:digi@gmail.com">digi@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="footer__col ft-col">
-                    <h3 class="ft-col__title">Адрес</h3>
+                    <h3 class="ft-col__title text text--wide">Адрес</h3>
                     <ul class="ft-col__list">
                         <li class="ft-col__litem"><a href="#">Пр. Науки 107<br>Kиев / Украина</a></li>
                     </ul>
                 </div>
                 <div class="footer__col ft-col">
-                    <h3 class="ft-col__title">Помощь</h3>
+                    <h3 class="ft-col__title text text--wide">Помощь</h3>
                     <ul class="ft-col__list">
                         <li class="ft-col__litem"><a href="#">Как с нами связаться?</a></li>
                         <li class="ft-col__litem"><a href="#">Что такое диджитал</a></li>
@@ -435,13 +472,21 @@
                     </ul>
                 </div>
                 <div class="footer__col ft-col">
-                    <h3 class="ft-col__title">Меню</h3>
+                    <h3 class="ft-col__title text text--wide">Меню</h3>
                     <ul class="ft-col__list">
                         <li class="ft-col__litem"><a href="#">Наши проекты</a></li>
                         <li class="ft-col__litem"><a href="#">Команда</a></li>
                         <li class="ft-col__litem"><a href="#">Блог</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-up">
+            <div class="container container--footer">
+                <a href="#top">
+                    <span>Вверх</span>
+                    <img src="img/arrow_top.png" alt="^" width="22" height="13">
+                </a>
             </div>
         </div>
     </footer>
