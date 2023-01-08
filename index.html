@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:title" content="Di-Gi: Digital Agency">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/bg.jpg">
+    <meta property="og:url" content="https://enderberry.github.io/di-gi">
     <title>Di-Gi</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -32,31 +42,66 @@
             </div>
         </div>
         <div class="header__main hmain">
-            <div class="hmain__fg">
-                <div class="container container--hmain">
-                    <h1 class="hmain__text-1">Мысли<br>глобально</h1>
-                    <p class="hmain__text-2">
-                        Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших
-                        клиентов в маркетинге, продажах и управлении
-                    </p>
-                    <div class="hmain__more-btn btn">
-                        <a href="#">Подробнее</a>
+            <div class="hmain__slider owl-carousel">
+                <div class="hmain__slide">
+                    <img src="img/bg-3.jpg" alt="BG-3" class="hmain__bg-img">
+                    <div class="hmain__fg">
+                        <div class="container container--hmain">
+                            <h1 class="hmain__text-1">Pensar<br>globalmente</h1>
+                            <p class="hmain__text-2">
+                                Di Gi es una agencia digital de ciclo completo orientada al mejor resultado de nuestros
+                                clientes en marketing, ventas y gestión
+                            </p>
+                            <div class="hmain__more-btn btn">
+                                <a href="#">Más</a>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="hmain__slider-discs slider-discs">
-                        <li class="slider-discs__item"></li>
-                        <li class="slider-discs__item slider-discs__item--current"></li>
-                        <li class="slider-discs__item"></li>
-                    </ul>
+                </div>
+                <div class="hmain__slide">
+                    <img src="img/bg-1.jpg" alt="BG-1" class="hmain__bg-img">
+                    <div class="hmain__fg">
+                        <div class="container container--hmain">
+                            <h1 class="hmain__text-1">Мысли<br>глобально</h1>
+                            <p class="hmain__text-2">
+                                Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших
+                                клиентов в маркетинге, продажах и управлении
+                            </p>
+                            <div class="hmain__more-btn btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hmain__slide">
+                    <img src="img/bg-2.jpg" alt="BG-2" class="hmain__bg-img">
+                    <div class="hmain__fg">
+                        <div class="container container--hmain">
+                            <h1 class="hmain__text-1">Think<br>globally</h1>
+                            <p class="hmain__text-2">
+                                Di Gi is a full-cycle digital agency aimed at the best result of our clients in
+                                marketing, sales and management
+                            </p>
+                            <div class="hmain__more-btn btn">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <ul class="hmain__slider-discs slider-discs">
+                <li class="slider-discs__item"></li>
+                <li class="slider-discs__item slider-discs__item--current"></li>
+                <li class="slider-discs__item"></li>
+            </ul>
             <div class="hmain__slider-btns">
                 <div class="hmain__slider-btn btn">
-                    <button>
+                    <button id="slider1-btn-prev">
                         <img src="img/arrow_left.png" alt="<" width="16" height="26" style="transform:translateX(-6%);">
                     </button>
                 </div>
                 <div class="hmain__slider-btn btn">
-                    <button>
+                    <button id="slider1-btn-next">
                         <img src="img/arrow_right.png" alt=">" width="16" height="26" style="filter:brightness(0.57); transform:translateX(12%);">
                     </button>
                 </div>
@@ -411,10 +456,26 @@
             <h2 class="quote__q-icon">
                 <img src="img/quotes.png" alt="Quote" width="32" height="27">
             </h2>
-            <p class="quote__text">
-                Если нужно создавать либо повышать имидж компании, то <span class="text--accent">диджитал-маркетинг</span> является наиболее подходящим
-            </p>
-            <p class="quote__author text text--wide">- Маргарита Акулич</p>
+            <div class="quote__slider owl-carousel">
+                <div class="quote__slide">
+                    <p class="quote__text">
+                        Si necesitas crear o potenciar la imagen de la empresa, entonces el <span class="text text--accent">marketing digital</span> es el más indicado
+                    </p>
+                    <p class="quote__author text text--wide">- Margarita Akulich</p>
+                </div>
+                <div class="quote__slide">
+                    <p class="quote__text">
+                        Если нужно создавать либо повышать имидж компании, то <span class="text text--accent">диджитал-маркетинг</span> является наиболее подходящим
+                    </p>
+                    <p class="quote__author text text--wide">- Маргарита Акулич</p>
+                </div>
+                <div class="quote__slide">
+                    <p class="quote__text">
+                        It you need to create or enhance the company's image, then <span class="text text--accent">digital marketing</span> is the most suitable
+                    </p>
+                    <p class="quote__author text text--wide">- Margarita Akulich</p>
+                </div>
+            </div>
             <ul class="quote__slider-discs slider-discs slider-discs--color--primary">
                 <li class="slider-discs__item"></li>
                 <li class="slider-discs__item slider-discs__item--current"></li>

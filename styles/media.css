@@ -21,7 +21,7 @@
         padding-right: 0;
     }
     .container--recall {
-        height: 160rem;
+        height: 160px;
     }
     .container--service {
         display: block;
@@ -34,25 +34,25 @@
     .header__recall {}
 
     .hmain__text-1 {
-        font-size: 84rem;
+        font-size: 84px;
     }
     .hmain__text-2 {
-        font-size: 18rem;
+        font-size: 18px;
     }
     .hmain__slider-btn button {
-        width: 56rem;
-        height: 56rem;
+        width: 56px;
+        height: 56px;
     }
     .hmain__slider-btn img {
-        width: 13rem;
-        height: 20rem;
+        width: 13px;
+        height: 20px;
     }
 
     .recall__text-1 {
-        font-size: 18rem;
+        font-size: 18px;
     }
     .recall__text-2 {
-        font-size: 14rem;
+        font-size: 14px;
     }
 
     .section__title {
@@ -64,7 +64,7 @@
         width: initial;
     }
     .service__text-2 {
-        width: 610rem;
+        width: 610px;
     }
     .service__table {
         border-top: var(--bdr);
@@ -74,15 +74,15 @@
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
-        gap: 30rem;
+        gap: 30px;
     }
 
     .team__block:last-child {
-        padding-left: 60rem;
+        padding-left: 60px;
     }
     .team__img img {
-        width: 416rem;
-        height: 380rem;
+        width: 416px;
+        height: 380px;
     }
     .team__title {
         text-align: left;
@@ -92,7 +92,7 @@
     }
 
     .last-news__masonry {
-        height: 1038rem;
+        height: 1038px;
     }
     .masonry__break--a {
         display: none;
@@ -102,21 +102,21 @@
     }
 
     .quote__text {
-        font-size: 32rem;
+        font-size: 32px;
     }
     .quote__author {
-        font-size: 20rem;
+        font-size: 20px;
     }
 
     .footer__text {
-        font-size: 36rem;
+        font-size: 36px;
     }
     .ft-col__title {
-        font-size: 18rem;
+        font-size: 18px;
     }
     .ft-col__litem {
-        font-size: 16rem;
-        line-height: 20rem;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -131,18 +131,21 @@
     }
 
     .hmain__fg {
-        padding: 87rem 0 52rem;
+        padding: 87px 0 112px;
     }
     .hmain__text-1 {
-        font-size: 60rem;
+        font-size: 60px;
+    }
+    .hmain__slider-discs {
+        bottom: 52px;
     }
 
     .recall__text-1 {
-        font-size: 24rem;
+        font-size: 24px;
     }
     .recall__text-2 {
         width: 90%;
-        font-size: 16rem;
+        font-size: 16px;
     }
 
     .service__text-2 {
@@ -154,18 +157,18 @@
 
     .team__block:last-child {
         position: static;
-        padding-left: 34rem;
+        padding-left: 34px;
     }
     .team__img img {
-        width: 248rem;
-        height: 227rem;
+        width: 248px;
+        height: 227px;
     }
     .team__title {
-        font-size: 36rem;
+        font-size: 36px;
     }
     .team__description {
-        margin: 12rem 0 0;
-        padding-bottom: 100rem;
+        margin: 12px 0 0;
+        padding-bottom: 100px;
     }
     .team__btn {
         width: 100%;
@@ -174,10 +177,10 @@
     }
 
     .last-news__hr {
-        margin-bottom: 50rem;
+        margin-bottom: 50px;
     }
     .last-news__masonry {
-        height: 1700rem;
+        height: 1700px;
     }
 
     .masonry__break--b {
@@ -191,7 +194,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 1fr;
-        row-gap: 15rem;
+        row-gap: 15px;
     }
 }
 
@@ -202,7 +205,7 @@
     }
 
     .container {
-        padding: 0 30rem;
+        padding: 0 30px;
     }
     .container--recall {
         display: block;
@@ -217,11 +220,11 @@
     }
 
     .root__team {
-        padding-bottom: 53rem;
+        padding-bottom: 53px;
     }
 
     .header__recall {
-        padding: 40rem 0;
+        padding: 40px 0;
     }
 
     .hmain__text-2 {
@@ -229,15 +232,15 @@
     }
 
     .recall__btn {
-        margin-top: 56rem;
+        margin-top: 56px;
     }
 
     .service__block:first-child {
-        padding: 0 30rem;
+        padding: 0 30px;
         text-align: center;
     }
     .service__hr {
-        margin: 30rem auto 0;
+        margin: 30px auto 0;
     }
 
     .projects__gallery {
@@ -249,7 +252,7 @@
         height: auto;
     }
     .pj-card__title {
-        font-size: 20rem;
+        font-size: 20px;
     }
 
     .team__block {
@@ -262,13 +265,13 @@
         height: auto;
     }
     .team__title {
-        margin-top: 40rem;
+        margin-top: 40px;
     }
     .team__hr {
-        margin: 20rem auto 0;
+        margin: 20px auto 0;
     }
     .team__description {
-        margin-top: 40rem;
+        margin-top: 40px;
     }
     .team__title,
     .team__description {
@@ -276,7 +279,7 @@
     }
 
     .footer__text {
-        font-size: 24rem;
+        font-size: 24px;
     }
 }
 
@@ -285,25 +288,25 @@
         --wid0: 100%;
     }
     .container--hhead {
-        height: 80rem;
+        height: 80px;
     }
 
     .section__title {
-        font-size: 24rem;
+        font-size: 24px;
     }
 
     .hmain__fg {
-        padding: 36rem 0 20rem;
+        padding: 36px 0 93px;
     }
     .hmain__text-1 {
-        font-size: 28rem;
+        font-size: 28px;
     }
     .hmain__more-btn,
     .hmain__slider-btns {
         display: none;
     }
     .hmain__slider-discs {
-        margin-top: 63rem;
+        bottom: 30px;
     }
 
     .service__block:first-child {
@@ -342,33 +345,33 @@
         text-align: center;
     }
     .footer__text {
-        font-size: 22rem;
+        font-size: 22px;
     }
     .footer__media {
         flex-direction: column;
         height: auto;
-        margin-top: 30rem;
+        margin-top: 30px;
     }
     .footer__med-item a {
-        padding: 10rem 0;
+        padding: 10px 0;
     }
     .footer__media,
     .footer__med-item {
         border: none !important;
     }
     .footer__colrow {
-        margin-top: 40rem;
+        margin-top: 40px;
         grid-template-columns: 1fr;
     }
     .footer__scroll-up {
         text-align: center;
-        padding: 56rem 0 19rem;
+        padding: 56px 0 19px;
     }
 
     .scroll-up__break {
         display: block;
     }
     .scroll-up img {
-        margin-top: 22rem;
+        margin-top: 22px;
     }
 }
